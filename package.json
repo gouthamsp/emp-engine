@@ -1,0 +1,15 @@
+{
+  "name": "employeeloginsystem",
+  "version": "0.0.1",
+  "description": "A system to maintain login and activities of a computer and a person, works as a check in / check out system at offices with additional tools built within (like Slack, WhatsApp, Inbox and a few other tools)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Goutham SP (gouth96@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "electron-prebuilt": "^1.4.13",
+    "eslint": "^5.12.1"
+  }
+}
