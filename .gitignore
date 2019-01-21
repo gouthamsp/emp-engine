@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+
+# Local Directories
+
+
+# Package Lock
+.package-lock.json
