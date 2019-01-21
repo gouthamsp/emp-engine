@@ -4,11 +4,15 @@
   "description": "A system to maintain login and activities of a computer and a person, works as a check in / check out system at offices with additional tools built within (like Slack, WhatsApp, Inbox and a few other tools)",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron main.js",
+    "build": "electron-packager . emp-engine --ignore=node_modules/electron-*",
+    "package": "asar pack emp-engine-linux-x64/resources/app emp-engine-linux-x64/resources/app.asar"
   },
   "author": "Goutham SP (gouth96@gmail.com)",
   "license": "ISC",
   "dependencies": {
+    "asar": "^0.14.6",
+    "electron-packager": "^13.0.1",
     "electron-prebuilt": "^1.4.13",
     "eslint": "^5.12.1"
   }
