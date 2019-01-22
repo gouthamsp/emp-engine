@@ -62,7 +62,7 @@ typings/
 
 
 # Binary Distributions
-.emp-engine-*
+emp-engine-*/
 
 
 # Local Directories
