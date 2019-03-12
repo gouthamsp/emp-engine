@@ -1,0 +1,14 @@
+{
+  "name": "syteam_info",
+  "version": "1.0.0",
+  "description": "syteam_info",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Gautham",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^4.0.2"
+  }
+}

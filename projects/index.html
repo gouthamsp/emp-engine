@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" type="text/css" href="index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <script>
+function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("workspace").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("workspace").style.marginLeft= "0";
+      }
+</script>
+<script>
+    $("#gmail_tab").click(function(){$("#rendered").attr("src", "http://www.google.com/")});
+    $("#gihub_tab").click(function(){$("#rendered").attr("src", "https://github.com/")});
+    $("#whats_app_tab").click(function(){$("#rendered").attr("src", "https://www.whatsapp.com/")});
+    $("#slack_tab").click(function(){$("#rendered").attr("src", "https://slack.com/")});
+
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cithadel!</title>
+  </head>
+  <body>
+    <div id ="header">
+      <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div><a class="navbar-brand" href="#"><span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Cithadel</span></a></div>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Page 1-1</a></li>
+            </ul>
+          </li>
+          </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    </div>
+    <div id ="slidebar">
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a id ="gmail_tab" href="#home"><i class="fa fa-fw fa-home"></i> Gmail</a>
+        <a id ="gihub_tab"   href="#services"><i class="fa fa-fw fa-wrench"></i> Github</a>
+        <a id ="whats_app_tab"  href="#clients"><i class="fa fa-fw fa-user"></i> Whats-app</a>
+        <a id ="slack_tab"  href="#contact"><i class="fa fa-fw fa-envelope"></i> Slack</a>
+</div>
+    </div>
+    <div id = "workspace">
+        <iframe id="rendered" height="300px" width="90%" src="https://www.google.com/" name="iframe" ></iframe>
+    </div>
+    <div class="footer">
+             <div class="container">
+                 <b class="copyright">&copy; devloped by Cithadel  </b>All rights reserved.
+             </div>
+
+
+
+  <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
