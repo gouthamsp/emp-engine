@@ -1,6 +1,7 @@
 const electron = require('electron')
 const http = require('http')
 
+
 const {app, BrowserWindow} = electron
 
 app.on('ready', () => {
@@ -9,9 +10,10 @@ app.on('ready', () => {
     mainWindow.loadURL('file://' + __dirname + '/templates/login.html')
     mainWindow.webContents.openDevTools()
 
+
     // TODO: Add conditions to check if the user is already logged in. If not ask to login.
-    const loginButton = document.getElementById('login__submit')
-    loginButton.onclick = LoginUser()
+    // const loginButton = document.getElementById('login__submit')
+    // loginButton.onclick = LoginUser()
 })
 
 

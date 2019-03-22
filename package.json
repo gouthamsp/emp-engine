@@ -11,9 +11,10 @@
   "author": "Goutham SP (gouth96@gmail.com)",
   "license": "ISC",
   "dependencies": {
-    "asar": "^0.14.6",
-    "electron-packager": "^13.0.1",
+    "asar": "^1.0.0",
+    "electron-packager": "^13.1.0",
     "electron-prebuilt": "^1.4.13",
-    "eslint": "^5.12.1"
+    "eslint": "^5.12.1",
+    "observ-history": "^1.0.3"
   }
 }
